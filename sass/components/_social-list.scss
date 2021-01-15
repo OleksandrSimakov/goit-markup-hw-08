@@ -1,0 +1,31 @@
+// social-icon
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: $transition-time-and-function;
+    &:hover,
+    :focus {
+      background-color: $accent-color;
+    }
+  }
+  &__image {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+    transition: $transition-time-and-function;
+    .social-list__link:hover &,
+    .social-list__link:hover & {
+      fill: $primary-white-color;
+    }
+  }
+}

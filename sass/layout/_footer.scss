@@ -1,0 +1,121 @@
+// footer
+.footer {
+  background-color: $footer-background-color;
+  padding: 60px 0px;
+  & > .container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    color: $primary-white-color;
+  }
+  .logo-link {
+    color: $accent-color;
+    margin-bottom: 20px;
+  }
+}
+// footer-list
+.footer-list {
+  margin-right: 70px;
+  &__item {
+    color: $primary-white-color;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__link {
+    color: $footer-white-color;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: $transition-time-and-function;
+    &.street {
+      color: $primary-white-color;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+// footer-paragraph
+.footer-paragraph {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $primary-white-color;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  &__e-mail {
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    width: 358px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 12px;
+  }
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px 28px;
+  }
+  &__icon {
+    margin-left: 10px;
+  }
+}
+// footer form
+.footer-form {
+  input[placeholder="E-mail"],
+  input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: $footer-white-color;
+  }
+  &__paragraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+  }
+}
+// footer social-list
+.social-list {
+  .social-box & {
+    padding: 0;
+    margin-right: 93px;
+    .social-list__image {
+      fill: $primary-white-color;
+    }
+  }
+  &__link {
+    background-color: $footer-social-icon-bg;
+    transition: $transition-time-and-function;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}

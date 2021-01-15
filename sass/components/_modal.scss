@@ -1,0 +1,136 @@
+// modal
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top right;
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  max-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: $primary-white-color;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transition: $transition-time-and-function;
+
+  .backdrop--is-hidden & {
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  &__close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $primary-white-color;
+    padding: 5px;
+    margin-top: 7px;
+    margin-right: 8px;
+    position: absolute;
+  }
+}
+
+.modal-form {
+  padding: 40px;
+  text-align: center;
+  &__paragraph {
+    width: 448px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $secondary-black-color;
+    text-align: left;
+    textarea {
+      width: 448px;
+      height: 127px;
+    }
+    label {
+      margin-bottom: 4px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-12px) translateX(12px);
+    .modal-form__input:focus-within + &,
+    .modal-form__input:hover + & {
+      fill: $accent-color;
+      transition: $transition-time-and-function;
+    }
+  }
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    padding: 12px 12px;
+    padding-left: 42px;
+    outline: none;
+    &:focus-within,
+    &:hover {
+      border: 1px solid $accent-color;
+      transition: $transition-time-and-function;
+    }
+    &:last-child {
+      padding: 12px 16px;
+    }
+  }
+  &__policy-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $accent-color;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    display: inline-block;
+  }
+  &__checkbox-field {
+    margin-bottom: 30px;
+    label {
+      font-size: 14px;
+      line-height: 1.71px;
+      letter-spacing: 0.03em;
+      color: $secondary-black-color;
+    }
+  }
+}
+.modal__close-button {
+  transition: $transition-time-and-function;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.modal-form__policy-label {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid $primary-black-color;
+    border-radius: 4px;
+    transition: $transition-time-and-function;
+    .modal-form__policy-field:checked + & {
+      background-image: url(../images/modal/tick-icon.svg);
+      background-color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+}
