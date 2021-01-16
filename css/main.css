@@ -672,6 +672,20 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .our-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 *30px);
+    margin-top: calc(-1 *30px);
+  }
+  .our-features-list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: calc(100% / 4 - 30px);
+  }
+}
+
 .our-projects-list {
   display: flex;
 }

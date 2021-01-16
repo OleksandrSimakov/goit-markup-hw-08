@@ -74,3 +74,7 @@
     }
   }
 }
+@media screen and (min-width: $desktop) {
+  .our-features-list {
+    display: flex;
+}
