@@ -1,11 +1,32 @@
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   &__heading {
+//     text-align: center;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     margin-bottom: 50px;
+//   }
+// }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__heading {
     text-align: center;
     font-weight: 700;
-    font-size: 36px;
     line-height: 1.16;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__heading {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 }
