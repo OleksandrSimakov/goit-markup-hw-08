@@ -56,7 +56,7 @@
 @media screen and (max-width: $tablet - 1px) {
   .our-features-list {
     &__item:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: $item-list-gap;
     }
   }
 }

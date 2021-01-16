@@ -1,10 +1,9 @@
 // social-icon
 .social-list {
   display: flex;
-  justify-content: space-between;
-  padding-right: 32px;
-  padding-bottom: 30px;
-  padding-left: 32px;
+  padding-right: 122px;
+  padding-bottom: 24px;
+  padding-left: 122px;
   &__link {
     display: flex;
     width: 44px;
@@ -27,5 +26,18 @@
     .social-list__link:hover & {
       fill: $primary-white-color;
     }
+  }
+}
+@media screen and (min-width: $tablet) {
+  .social-list {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .social-list {
+    padding-right: 32px;
+    padding-bottom: 30px;
+    padding-left: 32px;
   }
 }

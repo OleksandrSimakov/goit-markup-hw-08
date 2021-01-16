@@ -106,10 +106,9 @@ p {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  padding-right: 32px;
-  padding-bottom: 30px;
-  padding-left: 32px;
+  padding-right: 122px;
+  padding-bottom: 24px;
+  padding-left: 122px;
 }
 
 .social-list__link {
@@ -137,6 +136,21 @@ p {
 .social-list__link:hover .social-list__image,
 .social-list__link:hover .social-list__image {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-right: 32px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+  }
 }
 
 .header {
