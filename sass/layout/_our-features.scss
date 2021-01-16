@@ -65,11 +65,11 @@
   .our-features-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: calc(-1 *#{$item-list-gap});
     margin-top: calc(-1 *#{$item-list-gap});
-    margin-bottom: calc(-1 *#{$item-list-gap});
     &__item {
-      margin-right: $item-list-gap;
-      margin-bottom: $item-list-gap;
+      margin-left: $item-list-gap;
+      margin-top: $item-list-gap;
       width: calc(100% / 2 - #{$item-list-gap});
     }
   }
