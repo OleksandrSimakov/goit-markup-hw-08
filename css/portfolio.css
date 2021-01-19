@@ -158,9 +158,15 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container, .header__site-nav {
+.header .container {
   display: flex;
   align-items: center;
+}
+
+.header__site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
 }
 
 .header__logo {
@@ -212,8 +218,12 @@ p {
   border-radius: 2px;
 }
 
+.container__menu {
+  display: flex;
+}
+
 .header-address {
-  margin-left: auto;
+  margin-left: 289px;
 }
 
 .header-address__list {
