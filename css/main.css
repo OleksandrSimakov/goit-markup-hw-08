@@ -217,15 +217,16 @@ p {
 }
 
 .modal-form {
+  width: 450px;
   padding: 40px;
   text-align: center;
 }
 
 .modal-form__paragraph {
-  width: 448px;
+  width: 370px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   margin-bottom: 12px;
 }
 
@@ -234,16 +235,15 @@ p {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
   text-align: left;
 }
 
 .modal-form__field textarea {
-  width: 448px;
-  height: 127px;
+  height: 120px;
 }
 
 .modal-form__field label {
@@ -286,8 +286,8 @@ p {
 }
 
 .modal-form__policy-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: #2196f3;
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -296,11 +296,12 @@ p {
 
 .modal-form__checkbox-field {
   margin-bottom: 30px;
+  text-align: initial;
 }
 
 .modal-form__checkbox-field label {
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -311,6 +312,11 @@ p {
 
 .modal__close-button:hover, .modal__close-button:focus {
   fill: #2196f3;
+}
+
+.modal-form__policy-label {
+  display: flex;
+  align-items: center;
 }
 
 .modal-form__policy-label::before {
@@ -328,6 +334,32 @@ p {
   background-image: url(../images/modal/tick-icon.svg);
   background-color: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+  }
+  .modal-form__paragraph {
+    width: 448px;
+    line-height: 1.15;
+  }
+  __field {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  __field textarea {
+    width: 448px;
+    height: 127px;
+  }
+  __policy-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  __checkbox-field label {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
 }
 
 .header {
