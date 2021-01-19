@@ -166,7 +166,6 @@ p {
 .header__site-nav {
   display: flex;
   align-items: center;
-  margin-left: 93px;
 }
 
 .header__logo {
@@ -220,6 +219,7 @@ p {
 
 .container__menu {
   display: flex;
+  margin-left: 93px;
 }
 
 .header-address {

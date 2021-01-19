@@ -100,7 +100,6 @@
   &__site-nav {
     display: flex;
     align-items: center;
-    margin-left: 93px;
   }
   &__logo {
     color: #000000;
@@ -148,6 +147,7 @@
 }
 .container__menu {
   display: flex;
+  margin-left: 93px;
 }
 // header-address
 .header-address {
