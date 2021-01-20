@@ -260,6 +260,9 @@
   .footer-box {
     &__e-mail {
       display: flex;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
