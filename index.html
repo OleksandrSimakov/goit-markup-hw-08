@@ -17,7 +17,7 @@
         <a class="logo-link link animate__bounceIn" href="./index.html" lang="en" aria-label="логотип кампании">Web<span
             class="header__logo">Studio</span>
         </a>
-        <div class="container__menu">
+        <div class="container__menu" id="container__menu" data-menu>
           <nav class="header__site-nav">
             <ul class="site-nav__list list">
               <li class="site-nav__item">
@@ -51,6 +51,12 @@
             </ul>
           </address>
         </div>
+        <button class="header__menu-button is-open" type="button" aria-expanded="false" aria-controls="container__menu" data-menu-button>
+          <svg width="24px" height="16px" aria-label="мобильное меню">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu-close-button"></use>
+            <use class="icon-cross" href="./images/sprite.svg#icon-menu-open-button"></use>
+          </svg>
+        </button>
       </div>
     </header>
       <!--Уникальный контент-->
@@ -557,5 +563,6 @@
       <!-- js script -->
       <script src="./js/modal.js"></script>
       <script src="./js/speaker.js"></script>
+      <script src="./js/menu.js"></script>
   </body>
 </html>
