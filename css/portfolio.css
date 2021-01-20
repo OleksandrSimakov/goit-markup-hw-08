@@ -156,44 +156,39 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.header__site-nav {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .header__logo {
   color: #000000;
 }
 
-.site-nav {
-  display: flex;
-  align-items: center;
+.logo-link {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .site-nav__list {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.site-nav__item {
+  width: max-content;
+  margin: auto;
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .site-nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -208,7 +203,7 @@ p {
 
 .site-nav__link--current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -8px;
   display: flex;
   content: "";
   width: 100%;
@@ -218,26 +213,30 @@ p {
 }
 
 .container__menu {
-  display: flex;
-  margin-left: 93px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.header-address {
-  margin-left: 289px;
+.container__menu .header-address {
+  display: inline-block;
 }
 
-.header-address__list {
+.container__menu .header-address__list {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.header-address__item:not(:last-child) {
-  margin-right: 50px;
+.container__menu .header-address__item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
-.header-address__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.container__menu .header-address__link {
   display: flex;
   align-items: center;
   color: #757575;
@@ -248,18 +247,18 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-address__link:hover, .header-address__link:focus {
+.container__menu .header-address__link:hover, .container__menu .header-address__link:focus {
   color: #2196f3;
 }
 
-.mail-icon {
+.container__menu .mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.tel-icon {
+.container__menu .tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
