@@ -721,6 +721,7 @@ p {
   }
   .address-box {
     margin-right: 165px;
+    padding-left: 76px;
   }
   .footer-box__e-mail {
     display: flex;
