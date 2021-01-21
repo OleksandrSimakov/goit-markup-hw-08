@@ -195,11 +195,13 @@
   // margin-left: 93px;
   display: none;
   position: absolute;
-  top: 100%;
+  z-index: 1;
+  top: 101%;
   left: 0;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: $primary-white-color;
   &.is-open {
     display: block;
   }

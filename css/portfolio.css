@@ -112,9 +112,8 @@ p {
 
 .social-list {
   display: flex;
-  padding-right: 122px;
+  justify-content: center;
   padding-bottom: 24px;
-  padding-left: 122px;
 }
 
 .social-list__link {
@@ -252,11 +251,13 @@ p {
   text-align: center;
   display: none;
   position: absolute;
-  top: 100%;
+  z-index: 1;
+  top: 101%;
   left: 0;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ffffff;
 }
 
 .container__menu.is-open {

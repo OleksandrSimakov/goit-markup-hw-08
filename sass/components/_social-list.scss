@@ -1,9 +1,10 @@
 // social-icon
 .social-list {
   display: flex;
-  padding-right: 122px;
+  justify-content: center;
+  // padding-right: 122px;
   padding-bottom: 24px;
-  padding-left: 122px;
+  // padding-left: 122px;
   &__link {
     display: flex;
     width: 44px;
