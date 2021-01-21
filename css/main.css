@@ -180,6 +180,7 @@ p {
 .backdrop {
   position: fixed;
   z-index: 2;
+  padding: 93px 15px;
   overflow-y: scroll;
   top: 0;
   left: 0;
@@ -194,12 +195,13 @@ p {
   pointer-events: none;
 }
 
+@media screen and (min-width: 768px) {
+  padding: initial;
+}
+
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: top right;
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  margin: auto;
+  max-width: 450px;
   max-height: 609px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -347,6 +349,14 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top right;
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
   .modal-form {
     width: 528px;
   }
