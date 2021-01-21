@@ -121,7 +121,6 @@
 
 .footer {
   margin: 0 auto;
-  max-width: 1200px;
   text-align: center;
   background-color: $footer-background-color;
   padding: 60px 0px;
@@ -255,7 +254,7 @@
   }
   .address-box {
     margin-right: 165px;
-    padding-left: 76px;
+    padding-left: 61px;
   }
   .footer-box {
     &__e-mail {
@@ -275,6 +274,9 @@
     }
     &__container {
       flex-wrap: nowrap;
+    }
+    .address-box {
+      padding-left: 0;
     }
   }
 

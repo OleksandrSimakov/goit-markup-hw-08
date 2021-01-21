@@ -143,7 +143,7 @@ p {
 }
 
 .social-list__link:hover .social-list__image,
-.social-list__link:hover .social-list__image {
+.social-list__link:focus .social-list__image {
   fill: #ffffff;
 }
 
@@ -343,6 +343,7 @@ p {
 @media screen and (min-width: 480px) {
   .modal-form__policy-label {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -386,19 +387,19 @@ p {
     width: 448px;
     line-height: 1.15;
   }
-  __field {
+  .modal-form__field {
     font-size: 12px;
     line-height: 1.17;
   }
-  __field textarea {
+  .modal-form__field textarea {
     width: 448px;
     height: 127px;
   }
-  __policy-link {
+  .modal-form__policy-link {
     font-size: 14px;
     line-height: 1.71;
   }
-  __checkbox-field label {
+  .modal-form__checkbox-field label {
     font-size: 14px;
     line-height: 1.71px;
   }
@@ -631,7 +632,6 @@ p {
 
 .footer {
   margin: 0 auto;
-  max-width: 1200px;
   text-align: center;
   background-color: #2f303a;
   padding: 60px 0px;
@@ -761,7 +761,7 @@ p {
   }
   .address-box {
     margin-right: 165px;
-    padding-left: 76px;
+    padding-left: 61px;
   }
   .footer-box__e-mail {
     display: flex;
@@ -781,6 +781,9 @@ p {
   }
   .footer__container {
     flex-wrap: nowrap;
+  }
+  .footer .address-box {
+    padding-left: 0;
   }
   .footer-box {
     display: flex;
@@ -887,6 +890,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -901,6 +905,8 @@ p {
   background-color: #f5f4fa;
   border-radius: 4px;
   text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -967,6 +973,10 @@ p {
     padding-bottom: 27px;
     text-align: center;
   }
+}
+
+.our-team {
+  background-color: #f5f4fa;
 }
 
 .our-team-list {

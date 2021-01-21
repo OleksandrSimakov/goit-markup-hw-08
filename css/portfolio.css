@@ -143,7 +143,7 @@ p {
 }
 
 .social-list__link:hover .social-list__image,
-.social-list__link:hover .social-list__image {
+.social-list__link:focus .social-list__image {
   fill: #ffffff;
 }
 
@@ -389,7 +389,6 @@ p {
 
 .footer {
   margin: 0 auto;
-  max-width: 1200px;
   text-align: center;
   background-color: #2f303a;
   padding: 60px 0px;
@@ -519,7 +518,7 @@ p {
   }
   .address-box {
     margin-right: 165px;
-    padding-left: 76px;
+    padding-left: 61px;
   }
   .footer-box__e-mail {
     display: flex;
@@ -539,6 +538,9 @@ p {
   }
   .footer__container {
     flex-wrap: nowrap;
+  }
+  .footer .address-box {
+    padding-left: 0;
   }
   .footer-box {
     display: flex;

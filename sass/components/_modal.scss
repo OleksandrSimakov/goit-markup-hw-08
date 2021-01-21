@@ -269,6 +269,7 @@
 .modal-form__policy-label {
   @media screen and (min-width: $mobile) {
     display: flex;
+    justify-content: center;
   }
   align-items: center;
   &::before {
@@ -307,23 +308,23 @@
       width: 448px;
       line-height: 1.15;
     }
-  }
-  &__field {
-    font-size: 12px;
-    line-height: 1.17;
-    textarea {
-      width: 448px;
-      height: 127px;
+    &__field {
+      font-size: 12px;
+      line-height: 1.17;
+      textarea {
+        width: 448px;
+        height: 127px;
+      }
     }
-  }
-  &__policy-link {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-  &__checkbox-field {
-    label {
+    &__policy-link {
       font-size: 14px;
-      line-height: 1.71px;
+      line-height: 1.71;
+    }
+    &__checkbox-field {
+      label {
+        font-size: 14px;
+        line-height: 1.71px;
+      }
     }
   }
 }

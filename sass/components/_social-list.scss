@@ -24,7 +24,7 @@
     fill: $icon-color;
     transition: $transition-time-and-function;
     .social-list__link:hover &,
-    .social-list__link:hover & {
+    .social-list__link:focus & {
       fill: $primary-white-color;
     }
   }
