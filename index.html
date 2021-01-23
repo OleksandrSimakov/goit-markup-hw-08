@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="Description" content="Сайт веб-студии, которая разрабатывает десктопные и мобильные приложения для клиентов по всему миру. В команде работают дизайнер, маркетолог и разработчики с десятилетним опытом. Заказ услуги по дизайну и разработке сайта онлайн.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -506,7 +507,7 @@
             <p class="footer-form__paragraph">Подпишитесь на рассылку</p>
             <div class="footer-box">
               <input type="email" name="email" id="subscription-email" class="footer-box__e-mail" placeholder="E-mail"
-                autocomplete="off">
+                autocomplete="off" aria-label="поле ввода электронного адреса для подписки на новости">
               <button type="submit" class="footer-box__button">Подписаться
                 <svg class="footer-box__icon" width="24px" height="24px">
                   <use href="./images/sprite.svg#icon-icon-send"></use>
@@ -553,7 +554,7 @@
             </div>
             <button class="main__button" type="submit">Отправить</button>
           </form>
-          <button type="button" class="modal__close-button" data-modal-close>
+          <button type="button" class="modal__close-button" aria-label="кнопка закрытия окна" data-modal-close>
             <svg class="modal__close-icon" width="11px" height="11px">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
