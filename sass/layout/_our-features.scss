@@ -30,9 +30,6 @@
 //   }
 //   display: flex;
 // }
-.our-features {
-  padding-bottom: 0px;
-}
 .our-features-list {
   &__headline {
     font-weight: 700;
@@ -78,6 +75,11 @@
   }
 }
 @media screen and (min-width: $desktop) {
+  .our-features {
+    &.section {
+      padding-bottom: 0px;
+    }
+  }
   .our-features-list {
     display: flex;
     &__item {

@@ -881,10 +881,6 @@ p {
   }
 }
 
-.our-features {
-  padding-bottom: 0px;
-}
-
 .our-features-list__headline {
   font-weight: 700;
   font-size: 14px;
@@ -930,6 +926,9 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .our-features.section {
+    padding-bottom: 0px;
+  }
   .our-features-list {
     display: flex;
   }
@@ -995,7 +994,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .our-team-list__image {
